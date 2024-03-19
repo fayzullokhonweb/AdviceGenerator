@@ -1,0 +1,128 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/manrope-v15-latin-800.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Manrope';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 39, 51);
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 540px;
+    padding: 48px 48px;
+    text-align: center;
+    background-color: #313A48;
+    border-radius: 15px;
+}
+
+.title {
+    color: #53FFAA;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+}
+
+.text {
+    height: 114px;
+    color: #CEE3E9;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 40px;
+}
+
+.adviceLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.line {
+    width: 196px;
+    height: 1px;
+    background-color: #4F5D74;
+}
+
+.btn {
+    border: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #53FFAA;
+    margin-top: 40px;
+    margin-bottom: -80px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: -1px 0px 12px 1px rgba(83, 255, 170, 0.9);
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: -1px 0px 60px 4px rgba(83, 255, 170, 0.9);
+    -webkit-box-shadow: -1px 0px 47px 4px rgba(83, 255, 170, 0.9);
+    -moz-box-shadow: -1px 0px 47px 4px rgba(83, 255, 170, 0.9);
+}
+
+
+@media (max-width:600px) {
+    .card {
+        width: 343px;
+        padding: 24px 24px;
+        border-radius: 10px;
+    }
+
+    .content {
+        margin-bottom: 60px;
+    }
+
+    .title {
+        font-size: 11px;
+    }
+
+
+    .text {
+        font-size: 24px;
+    }
+
+    .line {
+        width: 122px;
+        height: 1px;
+    }
+
+    .btn {
+        margin-bottom: -50px;
+
+    }
+
+
+
+
+}
